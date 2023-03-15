@@ -1,0 +1,63 @@
+PLAN:
+
+INDEX.HTML - Landing Page ✅
+  Username Input field - <Input> ✅ (validation) ❌
+    store in variable to use later 
+  Difficulty - Radio ✅
+    tie button selected to a difficulty in the api array 
+    iterate over array and select matching questions 
+    acts as a filter
+    populates our own array with question for that particular game
+  Game Length - Radio / Input ✅
+    similar to difficulty, will be sent to api 
+  Start Game Button - Takes you to GAMEPAGE.HTML ✅
+    link to mainpage GAMEPAGE.html
+
+GAMEPAGE.HTML - Main question/game ✅
+  Question ✅
+    create element div, change textContent, grab from api query, take first of returned questions and display .question
+  Answer choices - radio ✅
+    tie a value to each button, use add and remove element, 
+  ? write function that generates a answer field to be multiple or boolean based on requirement, swap ?
+  Submit answer ✅
+  next Q Button (only show when answer is checked) ✅
+    > Feedback
+    > Show next question button
+    (once at last question, button changes to: game complete button, see reults etc)
+    links to endgame.page
+    Back home / Play again - a / link
+
+    BONUS:
+    Score (Correct answers out of Answered)
+      - Variable increments / on-screen field updates on Submit
+    Progress (Q's answered out of Questions)
+      - Use html progress element that knows no. of q's variable and q's answered variable 
+
+ENDGAME.HTML - After Quiz complete
+  Total Score
+    - Display "You scored X out of X"
+  Back home / Play again - a / link
+  
+  BONUS:
+  Leaderboard - Object {playername: score}
+  Add player name and score to leaderboard Object
+  Display it as a table
+
+
+FUNCTIONS:
+updateUsername()
+  return username
+
+updateDifficulty()
+  return difficulty
+
+updateGameLength()
+  return gameLength
+
+eventlistener on startGame button will run:
+startGame(difficulty, gameLength)
+  takes user to main game page
+  
+
+
+updateScore()

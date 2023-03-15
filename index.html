@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Landing Page</title>
+	</head>
+	<body>
+		<h1 id="welcome-message">Welcome to terrific trivia!</h1>
+		<div>
+		<form action="game-page.html">
+			<input type="text" placeholder="Enter your player name:" id="user-name" />
+			<fieldset id="game-difficulty">
+				<legend>Game Difficulty:</legend>
+				<div>
+					<input type="radio" id="easy" class="difficulty-radios" name="difficulty-answer" value="" />
+					<label for="easy">Easy</label>
+				</div>
+				<div>
+					<input type="radio" id="medium" class="difficulty-radios" name="difficulty-answer" value="" />
+					<label for="length-mediumium">Medium</label>
+				</div>
+				<div>
+					<input type="radio" id="hard" class="difficulty-radios" name="difficulty-answer" value="" />
+					<label for="hard">Hard</label>
+				</div>
+			</fieldset>
+			<fieldset id="game-length">
+				<legend>Game Length:</legend>
+				<div>
+					<input type="radio" id="length-short" class="length-radios" name="game-length" value="" />
+					<label for="length-short">Short</label>
+				</div>
+				<div>
+					<input type="radio" id="length-medium" class="length-radios" name="game-length" value="" />
+					<label for="length-medium">Medium</label>
+				</div>
+				<div>
+					<input type="radio" id="length-long" class="length-radios" name="game-length" value="" />
+					<label for="length-long">Long</label>
+				</div>
+			</fieldset>
+			<button id="start-game-button">Start Game!</button>
+		</form>
+	    </div>
+		<script src="main.js"></script>
+	</body>
+</html>

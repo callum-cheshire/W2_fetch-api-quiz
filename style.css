@@ -1,0 +1,28 @@
+table, th, td {
+    border:1px solid black;
+  }
+
+body table {
+    align-items: center;
+    width: 80%;
+}
+
+body {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: auto;
+}
+
+body div form {
+  width: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+button {
+  padding: 15px;
+  margin: 10px;
+}

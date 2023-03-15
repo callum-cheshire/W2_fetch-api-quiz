@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Game Page</title>
+	</head>
+	<body>
+		<!-- How does progress work? -->
+		<progress value="10" max="100"> 32% </progress>
+		<div>
+			<h1 id="question">Q: Here is your Question</h1>
+		</div>
+		<div>
+			<p id="score">Score:</p>
+		</div>
+		<form action="">
+			<fieldset>
+				<legend>Answer:</legend>
+				<div>
+					<input type="radio" class="answer-radio-buttons" name="answer" id="answer1" />
+					<label class="answer-radio-labels" for="answer1"></label>
+				</div>
+				<div>
+					<input type="radio" class="answer-radio-buttons" name="answer" id="answer2" />
+					<label class="answer-radio-labels" for="answer2"></label>
+				</div>
+				<div>
+					<input type="radio" class="answer-radio-buttons" name="answer" id="answer3" />
+					<label class="answer-radio-labels" for="answer3"></label>
+				</div>
+				<div>
+					<input type="radio" class="answer-radio-buttons" name="answer" id="answer4" />
+					<label class="answer-radio-labels" for="answer4"></label>
+				</div>
+				<button type="submit">Check Answer</button>
+				<button type="submit">Next Question</button>
+			</fieldset>
+		</form>
+		<button id="#home-button">Return to Start</button>
+		<script src="main.js"></script>
+	</body>
+</html>
